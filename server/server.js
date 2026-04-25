@@ -83,20 +83,27 @@ app.use(errorHandler);
 const PORT = process.env.PORT || 5000;
 
 const start = async () => {
-  await connectDB();
-
-  // Auto-seed on first run
-  const User = require('./models/User');
-  const count = await User.countDocuments();
-  if (count === 0) {
-    console.log('🌱 No data found, running seed...');
-    require('./utils/seed')();
-  }
-
+  // ✅ Listen FIRST so Cloud Run health check passes immediately
   server.listen(PORT, () => {
     console.log(`🚀 SmartStadiumX Server running on port ${PORT}`);
     console.log(`🏟️  API: http://localhost:${PORT}/api/health`);
   });
+
+  // Connect to MongoDB after server is already listening
+  try {
+    await connectDB();
+
+    // Auto-seed on first run
+    const User = require('./models/User');
+    const count = await User.countDocuments();
+    if (count === 0) {
+      console.log('🌱 No data found, running seed...');
+      require('./utils/seed')();
+    }
+  } catch (err) {
+    console.error('❌ DB connection failed:', err.message);
+    // Server keeps running even if DB fails (API health check still works)
+  }
 };
 
 start();
