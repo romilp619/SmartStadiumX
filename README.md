@@ -79,3 +79,23 @@ You can use the "Quick Login" buttons on the login page or use these credentials
 ## License
 
 MIT
+
+## Demo Images
+
+<img width="2332" height="1309" alt="image" src="https://github.com/user-attachments/assets/102388f9-8834-4d29-911c-6f70b2383564" />
+
+<img width="2150" height="1263" alt="image" src="https://github.com/user-attachments/assets/675d9846-8c5b-42e1-a766-60e0cb2e3ad2" />
+
+<img width="2556" height="1372" alt="image" src="https://github.com/user-attachments/assets/ff6e02a7-eab7-452c-ac9d-696737538bfd" />
+
+<img width="2529" height="1395" alt="image" src="https://github.com/user-attachments/assets/9df53cab-02da-4094-b376-9b5074aae499" />
+
+<img width="2496" height="1287" alt="image" src="https://github.com/user-attachments/assets/e91d24a5-dacd-4ea2-b101-ddb451335a49" />
+
+<img width="2523" height="1358" alt="image" src="https://github.com/user-attachments/assets/78152040-a418-442e-88fa-5f2bb55fc754" />
+
+<img width="2316" height="1378" alt="image" src="https://github.com/user-attachments/assets/475722ee-6c1c-48fb-b0c1-3cbc645494fc" />
+
+<img width="2497" height="1148" alt="image" src="https://github.com/user-attachments/assets/e1591a52-bd94-49fa-9906-ea73b1bb98c8" />
+
+<img width="2513" height="1241" alt="image" src="https://github.com/user-attachments/assets/f0996494-ea59-42e0-bb92-ce2815f0e3fe" />
