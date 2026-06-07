@@ -78,7 +78,7 @@ const AppRoutes = () => {
   );
 };
 
-function App() {
+
   return (
     <AuthProvider>
       <SocketProvider>
